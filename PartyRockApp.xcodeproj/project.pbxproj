@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091F36EE1EDF3DA200C5A680 /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091F36ED1EDF3DA200C5A680 /* PartyRock.swift */; };
 		093714581EDCA410004FF546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093714571EDCA410004FF546 /* AppDelegate.swift */; };
 		0937145A1EDCA410004FF546 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093714591EDCA410004FF546 /* MainViewController.swift */; };
 		0937145D1EDCA410004FF546 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0937145B1EDCA410004FF546 /* Main.storyboard */; };
 		0937145F1EDCA410004FF546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0937145E1EDCA410004FF546 /* Assets.xcassets */; };
 		093714621EDCA410004FF546 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093714601EDCA410004FF546 /* LaunchScreen.storyboard */; };
 		0937146A1EDCC1E1004FF546 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093714691EDCC1E0004FF546 /* VideoViewController.swift */; };
+		0937146D1EDCDE2C004FF546 /* PartyCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937146C1EDCDE2B004FF546 /* PartyCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		091F36ED1EDF3DA200C5A680 /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
 		093714541EDCA410004FF546 /* PartyRockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyRockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		093714571EDCA410004FF546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		093714591EDCA410004FF546 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		093714611EDCA410004FF546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		093714631EDCA410004FF546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		093714691EDCC1E0004FF546 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		0937146C1EDCDE2B004FF546 /* PartyCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		091F36EC1EDF3D7400C5A680 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				091F36ED1EDF3DA200C5A680 /* PartyRock.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		0937144B1EDCA410004FF546 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +70,8 @@
 			children = (
 				093714571EDCA410004FF546 /* AppDelegate.swift */,
 				0937146B1EDCC255004FF546 /* Controllers */,
+				091F36EC1EDF3D7400C5A680 /* Model */,
+				0937146E1EDCDE31004FF546 /* View */,
 				0937145B1EDCA410004FF546 /* Main.storyboard */,
 				0937145E1EDCA410004FF546 /* Assets.xcassets */,
 				093714601EDCA410004FF546 /* LaunchScreen.storyboard */,
@@ -73,6 +87,14 @@
 				093714691EDCC1E0004FF546 /* VideoViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0937146E1EDCDE31004FF546 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0937146C1EDCDE2B004FF546 /* PartyCellTableViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +171,8 @@
 			files = (
 				0937145A1EDCA410004FF546 /* MainViewController.swift in Sources */,
 				093714581EDCA410004FF546 /* AppDelegate.swift in Sources */,
+				091F36EE1EDF3DA200C5A680 /* PartyRock.swift in Sources */,
+				0937146D1EDCDE2C004FF546 /* PartyCellTableViewCell.swift in Sources */,
 				0937146A1EDCC1E1004FF546 /* VideoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +335,7 @@
 				093714681EDCA410004FF546 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

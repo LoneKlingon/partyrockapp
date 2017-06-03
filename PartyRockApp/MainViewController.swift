@@ -14,7 +14,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var tableView: UITableView!
     
-    let urlTest = "<iframe width=\"560\" height=\"315\" src=\"https://www.dailymotion.com/embed/video/x3m6oq\" frameborder=\"0\" allowfullscreen></iframe>"
+    let urlTest = "<iframe name=\"tubevideo1\" width=\"90%\" height=\"90%\" src=\"https://www.dailymotion.com/embed/video/x3m6oq\" frameborder=\"0\" allowfullscreen></iframe>"
     
     let imgTest = "https://images.genius.com/42f0ea2dd368dd7948b21bceae164b19.500x500x1.jpg"
     
@@ -39,6 +39,8 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // Dispose of any resources that can be recreated.
     }
     
+    
+    //method for modifying individual cells
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PartyCellTableViewCell", for: indexPath) as? PartyCellTableViewCell
@@ -57,11 +59,13 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
     }
     
+    //method that sets number of rows in tableview
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return partyRockData.count
     }
     
+    //method for when tableview cell is selected 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let partyRockMainVCData = partyRockData[indexPath.row]
         

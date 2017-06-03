@@ -12,20 +12,26 @@ class VideoViewController: UIViewController {
     @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var videoTitleLbl: UILabel!
     
+    
+    //container for sent data from mainviewcontroller 
     private var _partyRock:PartyRock!
     
     
     var partyRock: PartyRock
     {
+        //set partyRock to sent data
+        set
+        {
+            _partyRock = newValue
+        }
+        
+        //return the sent data
         get
         {
             return _partyRock
         }
         
-        set
-        {
-            _partyRock = newValue
-        }
+        
     }
 
     override func viewDidLoad() {
